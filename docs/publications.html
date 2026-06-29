@@ -17,13 +17,15 @@ title: Publication / Talk
       <ul class="pub-list">
         {% for p in group.papers %}
         <li class="pub-item">
-          <div class="pub-main">
-            <p class="pub-title">{% if p.venue %}<span class="pub-venue">({{ p.venue }})</span> {% endif %}<span class="pub-name">{{ p.title }}</span></p>
-            {% if p.authors %}<p class="pub-authors">{{ p.authors }}</p>{% endif %}
-            {% if p.info %}<p class="pub-info">{{ p.info }}</p>{% endif %}
+          <p class="pub-title">{% if p.venue %}<span class="pub-venue">({{ p.venue }})</span> {% endif %}<span class="pub-name">{{ p.title }}</span></p>
+          <div class="pub-meta">
+            <div class="pub-meta-text">
+              {% if p.authors %}<span class="pub-authors">{{ p.authors }}</span>{% endif %}
+              {% if p.info %}<span class="pub-info">{{ p.info }}</span>{% endif %}
+            </div>
+            {% if p.pdf %}<a class="pub-btn" href="{{ '/assets/papers/' | append: p.pdf | relative_url }}" target="_blank" rel="noopener">Paper</a>
+            {% elsif p.ext %}<a class="pub-btn" href="{{ p.ext }}" target="_blank" rel="noopener">Paper</a>{% endif %}
           </div>
-          {% if p.pdf %}<a class="pub-btn" href="{{ '/assets/papers/' | append: p.pdf | relative_url }}" target="_blank" rel="noopener">Paper</a>
-          {% elsif p.ext %}<a class="pub-btn" href="{{ p.ext }}" target="_blank" rel="noopener">Paper</a>{% endif %}
         </li>
         {% endfor %}
       </ul>

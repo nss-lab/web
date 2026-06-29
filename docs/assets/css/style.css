@@ -346,18 +346,19 @@ img { max-width: 100%; height: auto; }
 .faculty-info h3 { margin: 1.4rem 0 0.4rem; }
 .faculty-title { color: var(--muted); font-weight: 500; margin: 0 0 1rem; }
 
-/* Publications: text on the left, Paper button on the right (vertically centered) */
+/* Publications: title spans full width; authors + venue + Paper share the next row */
 .pub-group { margin-bottom: 1.6rem; }
 .pub-year { text-align: left; }
 .pub-list { list-style: none; margin: 0; padding: 0; }
-.pub-item { display: flex; align-items: center; gap: 1.25rem; padding: 1rem 0; border-bottom: 1px solid var(--line); text-align: left; }
+.pub-item { padding: 1rem 0; border-bottom: 1px solid var(--line); text-align: left; }
 .pub-item:last-child { border-bottom: none; }
-.pub-main { flex: 1 1 auto; min-width: 0; }
-.pub-title { margin: 0 0 0.25rem; }
+.pub-title { margin: 0 0 0.3rem; }
 .pub-name { font-weight: 700; color: var(--ink); }
 .pub-venue { color: #ff0000; font-weight: 700; }
-.pub-authors { margin: 0 0 0.1rem; font-size: 0.92rem; color: var(--ink); }
-.pub-info { margin: 0; font-size: 0.87rem; color: var(--muted); font-style: italic; }
+.pub-meta { display: flex; align-items: center; justify-content: space-between; gap: 1.25rem; }
+.pub-meta-text { flex: 1 1 auto; min-width: 0; }
+.pub-authors { display: block; font-size: 0.92rem; color: var(--ink); }
+.pub-info { display: block; font-size: 0.87rem; color: var(--muted); font-style: italic; }
 .pub-btn { flex: 0 0 auto; display: inline-block; padding: 0.42rem 1rem; font-size: 0.8rem; font-weight: 600; color: #fff; background: var(--navy); border-radius: 999px; white-space: nowrap; }
 .pub-btn:hover { background: var(--navy-700); color: #fff; text-decoration: none; }
 
