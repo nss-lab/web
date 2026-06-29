@@ -31,4 +31,14 @@
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
   }
+
+  // Gallery carousel: prev/next buttons page through the strip
+  var strip = document.getElementById("galleryStrip");
+  if (strip) {
+    var step = function () { return Math.max(strip.clientWidth * 0.85, 320); };
+    var prev = document.querySelector(".gallery-prev");
+    var next = document.querySelector(".gallery-next");
+    if (prev) prev.addEventListener("click", function () { strip.scrollBy({ left: -step(), behavior: "smooth" }); });
+    if (next) next.addEventListener("click", function () { strip.scrollBy({ left: step(), behavior: "smooth" }); });
+  }
 })();

@@ -336,30 +336,45 @@ img { max-width: 100%; height: auto; }
 .faculty-info h3 { margin: 1.4rem 0 0.4rem; }
 .faculty-title { color: var(--muted); font-weight: 500; margin: 0 0 1rem; }
 
-/* Publications: centered entries, bold title, red venue, inline paper link */
+/* Publications: text on the left, Paper button on the right (vertically centered) */
 .pub-group { margin-bottom: 1.6rem; }
-.pub-year { text-align: center; }
+.pub-year { text-align: left; }
 .pub-list { list-style: none; margin: 0; padding: 0; }
-.pub-item { padding: 1rem 0; border-bottom: 1px solid var(--line); text-align: center; }
+.pub-item { display: flex; align-items: center; gap: 1.25rem; padding: 1rem 0; border-bottom: 1px solid var(--line); text-align: left; }
 .pub-item:last-child { border-bottom: none; }
+.pub-main { flex: 1 1 auto; min-width: 0; }
 .pub-title { margin: 0 0 0.25rem; }
 .pub-name { font-weight: 700; color: var(--ink); }
 .pub-venue { color: #ff0000; font-weight: 700; }
-.pub-link { font-weight: 600; white-space: nowrap; }
 .pub-authors { margin: 0 0 0.1rem; font-size: 0.92rem; color: var(--ink); }
 .pub-info { margin: 0; font-size: 0.87rem; color: var(--muted); font-style: italic; }
+.pub-btn { flex: 0 0 auto; display: inline-block; padding: 0.42rem 1rem; font-size: 0.8rem; font-weight: 600; color: #fff; background: var(--navy); border-radius: 999px; white-space: nowrap; }
+.pub-btn:hover { background: var(--navy-700); color: #fff; text-decoration: none; }
 
-/* Gallery: horizontal collage with caption overlay */
-.gallery-note { margin-bottom: 1.2rem; }
-.gallery-strip { display: flex; gap: 1rem; overflow-x: auto; padding-bottom: 1rem; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; }
+/* People combined page: faculty mini-card + subgroup headings */
+.faculty-mini { display: flex; align-items: center; gap: 1.2rem; margin-bottom: 0.5rem; }
+.faculty-mini img { width: 84px; height: 84px; border-radius: 50%; object-fit: cover; box-shadow: var(--shadow-sm); flex: 0 0 auto; }
+.faculty-mini .person-name { display: block; font-size: 1.1rem; font-weight: 700; }
+.people-subgroup { color: var(--muted); margin: 1.3rem 0 0.6rem; font-size: 1rem; }
+
+/* Gallery: horizontal carousel with prev/next buttons and caption overlay */
+.gallery { position: relative; }
+.gallery-note { margin-bottom: 1rem; }
+.gallery-strip { display: flex; gap: 1rem; overflow-x: auto; padding-bottom: 1rem; scroll-snap-type: x mandatory; scroll-behavior: smooth; -webkit-overflow-scrolling: touch; }
 .gallery-item { position: relative; flex: 0 0 auto; margin: 0; scroll-snap-align: start; }
-.gallery-item img { height: 260px; width: auto; display: block; border-radius: var(--radius); box-shadow: var(--shadow-sm); object-fit: cover; }
+.gallery-item img { height: 280px; width: auto; display: block; border-radius: var(--radius); box-shadow: var(--shadow-sm); object-fit: cover; }
 .gallery-item figcaption { position: absolute; left: 0; right: 0; bottom: 0; padding: 0.7rem 0.8rem 0.55rem; color: #fff; font-size: 0.82rem; font-weight: 600; line-height: 1.25; background: linear-gradient(transparent, rgba(0,0,0,0.78)); border-radius: 0 0 var(--radius) var(--radius); }
+.gallery-nav { position: absolute; top: 50%; transform: translateY(-50%); z-index: 5; width: 44px; height: 44px; border-radius: 50%; border: none; background: var(--navy); color: #fff; font-size: 1.6rem; line-height: 1; cursor: pointer; box-shadow: var(--shadow); display: flex; align-items: center; justify-content: center; opacity: 0.92; }
+.gallery-nav:hover { opacity: 1; background: var(--navy-700); }
+.gallery-prev { left: -12px; }
+.gallery-next { right: -12px; }
 
 @media (max-width: 860px) {
   .faculty-profile { flex-direction: column; }
   .faculty-photo { width: 55%; max-width: 220px; }
-  .gallery-item img { height: 180px; }
+  .gallery-item img { height: 200px; }
+  .gallery-prev { left: 2px; }
+  .gallery-next { right: 2px; }
 }
 
 /* ==========================================================================

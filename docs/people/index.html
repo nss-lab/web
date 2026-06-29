@@ -1,0 +1,31 @@
+---
+layout: page
+permalink: /people/
+title: People
+subtitle: Faculty, students, and alumni of the NSS Lab.
+---
+<h2 class="people-group">Faculty</h2>
+<div class="faculty-mini">
+  <img src="{{ '/assets/img/seungwon-shin.jpg' | relative_url }}" alt="Prof. Seungwon Shin">
+  <div>
+    <span class="person-name">Seungwon Shin</span>
+    <span class="person-position">Associate Professor, KAIST EE · Director, NSS Lab</span>
+    <span class="person-links">
+      <a class="pill" href="{{ '/people/faculty/' | relative_url }}">Full profile</a>
+      <a class="pill" href="mailto:{{ site.lab_email }}">Email</a>
+    </span>
+  </div>
+</div>
+
+<h2 class="people-group">Doctoral Students</h2>
+{% include people.html list=site.data.phd %}
+
+<h2 class="people-group">Master's Students</h2>
+{% include people.html list=site.data.masters %}
+
+<h2 class="people-group">Alumni</h2>
+{% assign groups = site.data.alumni | group_by: "group" %}
+{% for g in groups %}
+<h3 class="people-subgroup">{{ g.name }}</h3>
+{% include people.html list=g.items %}
+{% endfor %}
