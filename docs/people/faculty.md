@@ -5,7 +5,6 @@ title: Faculty
 ---
 
 <div class="faculty-profile">
-  <img class="faculty-photo" src="{{ '/assets/img/seungwon-shin.jpg' | relative_url }}" alt="Prof. Seungwon Shin">
   <div class="faculty-info">
     <h2>Seungwon Shin</h2>
     <p class="faculty-title">Associate Professor, School of Electrical Engineering, KAIST<br>Director, Network and System Security (NSS) Laboratory</p>
@@ -19,4 +18,5 @@ title: Faculty
     <h3>Contact</h3>
     <p><a href="mailto:{{ site.lab_email }}">{{ site.lab_email }}</a></p>
   </div>
+  <img class="faculty-photo" src="{{ '/assets/img/seungwon-shin.jpg' | relative_url }}" alt="Prof. Seungwon Shin">
 </div>

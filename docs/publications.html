@@ -10,11 +10,9 @@ subtitle: Peer-reviewed papers, journals, and talks.
   <ul class="pub-list">
     {% for p in group.papers %}
     <li class="pub-item">
-      <p class="pub-title">{% if p.venue %}<span class="pub-venue">({{ p.venue }})</span> {% endif %}{{ p.title }}</p>
+      <p class="pub-title">{% if p.venue %}<span class="pub-venue">({{ p.venue }})</span> {% endif %}<span class="pub-name">{{ p.title }}</span>{% if p.pdf %} <a class="pub-link" href="{{ '/assets/papers/' | append: p.pdf | relative_url }}" target="_blank" rel="noopener">[paper]</a>{% elsif p.ext %} <a class="pub-link" href="{{ p.ext }}" target="_blank" rel="noopener">[paper]</a>{% endif %}</p>
       {% if p.authors %}<p class="pub-authors">{{ p.authors }}</p>{% endif %}
       {% if p.info %}<p class="pub-info">{{ p.info }}</p>{% endif %}
-      {% if p.pdf %}<a class="pill pub-pdf" href="{{ '/assets/papers/' | append: p.pdf | relative_url }}" target="_blank" rel="noopener">PDF ↓</a>
-      {% elsif p.ext %}<a class="pill pub-pdf" href="{{ p.ext }}" target="_blank" rel="noopener">Paper ↗</a>{% endif %}
     </li>
     {% endfor %}
   </ul>
