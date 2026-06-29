@@ -7,8 +7,8 @@ title: Faculty
 <div class="faculty-profile">
   <div class="faculty-info">
     <h2>Seungwon Shin</h2>
-    <p class="faculty-title">Associate Professor, School of Electrical Engineering, KAIST<br>Director, Network and System Security (NSS) Laboratory</p>
-    <p>Prof. Shin's research centers on revealing and understanding network threats and on designing new systems and algorithms to make networked systems secure. His primary areas include Software-Defined Networking (SDN) security, IoT and embedded security, and botnet analysis.</p>
+    <p class="faculty-title">Associate Professor, School of Electrical Engineering, KAIST<br>Principal Investigator, Network and System Security (NSS) Laboratory</p>
+    <p>Prof. Shin's research centers on revealing and understanding emerging threats and on designing new systems and algorithms that make computing secure. His current focus spans the security of AI and large language models, secure and high-performance systems, and network and cyber-threat-intelligence security.</p>
     <p>Before joining KAIST in 2013, he spent nine years in industry developing networking systems. He has been a visiting scientist at MIT and interned at SRI International, and has served as a research associate with the Open Networking Foundation (ONF) security working group.</p>
     <h3>Education</h3>
     <ul>

@@ -1,27 +1,26 @@
 {%- comment -%}
-Renders a roster as compact rows: name (+ optional position) + link buttons.
-Usage:  {% include people.html list=site.data.phd %}
-Fields: name, position (shown in grey, e.g. alumni current job),
-        email, homepage, scholar, cv, github, linkedin (each a button if present).
-No photos (privacy).
+Renders a roster as compact one-line rows: name on the left.
+  {% include people.html list=site.data.phd links=true %}  -> right side: link buttons
+  {% include people.html list=g.items %}                   -> right side: current position (grey)
+With links=true, CV / GitHub / LinkedIn always appear (greyed + unclickable if
+missing); Email / Homepage / Scholar appear only when present. No photos.
 {%- endcomment -%}
 {% if include.list and include.list != empty %}
 <ul class="people-list">
   {% for person in include.list %}
   <li class="person-row">
-    <span class="person-id">
-      <span class="person-name">{{ person.name }}</span>
-      {% if person.position %}<span class="person-position">{{ person.position }}</span>{% endif %}
-    </span>
-    {% if person.email or person.homepage or person.scholar or person.cv or person.github or person.linkedin %}
+    <span class="person-name">{{ person.name }}</span>
+    {% if include.links %}
     <span class="person-links">
       {% if person.email %}<a class="pill" href="mailto:{{ person.email }}">Email</a>{% endif %}
       {% if person.homepage %}<a class="pill" href="{{ person.homepage }}" target="_blank" rel="noopener">Homepage</a>{% endif %}
       {% if person.scholar %}<a class="pill" href="{{ person.scholar }}" target="_blank" rel="noopener">Scholar</a>{% endif %}
-      {% if person.cv %}<a class="pill" href="{{ person.cv }}" target="_blank" rel="noopener">CV</a>{% endif %}
-      {% if person.github %}<a class="pill" href="{{ person.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
-      {% if person.linkedin %}<a class="pill" href="{{ person.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{% endif %}
+      {% if person.cv %}<a class="pill" href="{{ person.cv }}" target="_blank" rel="noopener">CV</a>{% else %}<span class="pill pill-off">CV</span>{% endif %}
+      {% if person.github %}<a class="pill" href="{{ person.github }}" target="_blank" rel="noopener">GitHub</a>{% else %}<span class="pill pill-off">GitHub</span>{% endif %}
+      {% if person.linkedin %}<a class="pill" href="{{ person.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{% else %}<span class="pill pill-off">LinkedIn</span>{% endif %}
     </span>
+    {% elsif person.position %}
+    <span class="person-position">{{ person.position }}</span>
     {% endif %}
   </li>
   {% endfor %}

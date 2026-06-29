@@ -27,7 +27,9 @@ faculty photo, ~99 paper PDFs, gallery photos) rather than hot-linked.
     position** in grey.
   - A combined **/people/** page (the nav "People" link) shows everyone together;
     the dropdown still links to the individual pages.
-- **Research** — four areas (data-driven, easy to edit).
+- **Research** — three pillars: **AI, Security, System** (data-driven in
+  `_data/research.yml`, grounded in the last 5 years of papers). The legacy
+  SDN/container/blockchain framing was retired per the advisor.
 - **Publications** — full list, **120 papers (2015–2026)** grouped by year in the
   legacy format (venue, title, authors, venue/year), each row with a **Paper**
   button on the right. **99 paper PDFs hosted locally** in `assets/papers/`; 8

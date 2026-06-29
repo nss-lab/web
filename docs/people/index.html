@@ -9,7 +9,7 @@ subtitle: Faculty, students, and alumni of the NSS Lab.
   <img src="{{ '/assets/img/seungwon-shin.jpg' | relative_url }}" alt="Prof. Seungwon Shin">
   <div>
     <span class="person-name">Seungwon Shin</span>
-    <span class="person-position">Associate Professor, KAIST EE · Director, NSS Lab</span>
+    <span class="person-position">Associate Professor, KAIST EE · Principal Investigator, NSS Lab</span>
     <span class="person-links">
       <a class="pill" href="{{ '/people/faculty/' | relative_url }}">Full profile</a>
       <a class="pill" href="mailto:{{ site.lab_email }}">Email</a>
@@ -18,10 +18,10 @@ subtitle: Faculty, students, and alumni of the NSS Lab.
 </div>
 
 <h2 class="people-group">Doctoral Students</h2>
-{% include people.html list=site.data.phd %}
+{% include people.html list=site.data.phd links=true %}
 
 <h2 class="people-group">Master's Students</h2>
-{% include people.html list=site.data.masters %}
+{% include people.html list=site.data.masters links=true %}
 
 <h2 class="people-group">Alumni</h2>
 {% assign groups = site.data.alumni | group_by: "group" %}

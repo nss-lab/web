@@ -277,6 +277,8 @@ img { max-width: 100%; height: auto; }
   border-radius: 999px;
 }
 .pill:hover { background: var(--navy); color: #fff; text-decoration: none; }
+.pill-off { color: var(--muted); background: var(--bg-alt); border-color: var(--line); opacity: 0.45; cursor: default; }
+.pill-off:hover { background: var(--bg-alt); color: var(--muted); }
 
 /* Research detail blocks */
 .research-block { padding: 1.5rem 0; border-bottom: 1px solid var(--line); }
@@ -323,8 +325,7 @@ img { max-width: 100%; height: auto; }
 
 /* People: name stacked over position (left-aligned); links to the right */
 .person-row { align-items: center; }
-.person-id { display: flex; flex-direction: column; align-items: flex-start; gap: 0.1rem; }
-.person-position { display: block; color: var(--muted); font-weight: 600; font-size: 0.88rem; }
+.person-position { color: var(--muted); font-weight: 600; font-size: 0.9rem; text-align: right; flex: 0 1 auto; padding-left: 1rem; }
 .people-group { color: var(--navy); margin: 2rem 0 0.9rem; }
 .people-group:first-child { margin-top: 0; }
 

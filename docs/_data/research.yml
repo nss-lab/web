@@ -1,23 +1,25 @@
 # Research areas — shown on the homepage cards and the /research/ page.
-# To edit an area, change its title/summary. To add one, copy a block.
-- title: SDN / NFV Security
+# Three pillars (AI, Security, System). Edit a summary or reorder freely.
+- title: AI
   summary: >-
-    Building network security systems on Software-Defined Networking and Network
-    Function Virtualization — detecting and mitigating sophisticated DDoS attacks
-    through topology obfuscation (EqualNet, BottleNet) and hardware-accelerated
-    regular-expression matching (Reinhardt).
-- title: Cyber Threat Intelligence
+    Securing modern AI, and using AI for security. We probe and harden large
+    language models — jailbreaking text-to-image models (PC²), poisoning and
+    safely fine-tuning Mixture-of-Experts LLMs (MoEvil, SafeMoE), unlearning
+    unsafe alignment, and removing backdoors from parameter-efficient fine-tuning
+    (Obliviate) — and we build ML/NLP methods for security, from dark-web language
+    models (DarkBERT) to graph- and federated-learning-based threat detection.
+- title: Security
   summary: >-
-    Collecting and analyzing threat data from across the web to understand emerging
-    attack trends — uncovering inconsistencies in security information, measuring
-    phishing services on the dark web, and investigating cryptocurrency abuse.
-- title: Container Security
+    Understanding and defending networked systems. We study network, web, and
+    blockchain security, cyber threat intelligence, and large-scale measurement —
+    security provenance for intrusion analysis (SECTRACER), SDN/SD-WAN attacks and
+    defenses (Ambusher, Heimdallr), micro-architectural and timing side channels
+    (AVXProbe), traffic obfuscation and anonymity (MUFLLER, EqualNet), and
+    permissionless blockchain security (Partitioning Ethereum).
+- title: System
   summary: >-
-    Securing containerized microservice deployments at the network level —
-    preventing inter-container attacks while preserving performance, and enforcing
-    least-privilege system access for containers.
-- title: Blockchain Security
-  summary: >-
-    Large-scale analysis of block and transaction data across Bitcoin, Ethereum,
-    and EOS — studying how permissionless blockchain networks actually behave on
-    the live network, beyond the historical ledger.
+    High-performance systems that are secure by construction. We accelerate and
+    protect cloud infrastructure — service-mesh ingress on SmartNICs (HybridMesh,
+    HardMesh), serverless/FaaS with trusted execution (AccelFaaS, TDSnap,
+    Cryonics), RDMA-aware and isolated container networking (RDNet, Hyperion),
+    and in-network security via SDN/NFV and reconfigurable hardware (Reinhardt).
