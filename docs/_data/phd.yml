@@ -1,22 +1,22 @@
-# Doctoral students. Each entry: name (required), then optional links.
-# Available fields: name, role, email, homepage, scholar, github, linkedin.
-# A button appears only for fields you fill in. No photos (privacy).
-# Example with links:
-#   - name: Jane Doe
-#     email: jane@kaist.ac.kr
-#     github: janedoe          # -> https://github.com/janedoe
-#     linkedin: jane-doe       # -> https://www.linkedin.com/in/jane-doe/
-#
-# NOTE: names below were captured from the legacy site — please verify spelling
-# and add contact links as appropriate.
-- name: Haney Kang
-- name: Kwanwoo Kim
-- name: Youngjin Jin
-- name: Minkyoo Song
-- name: Hanna Kim
-- name: Youngduk Kim
-- name: Myungchul Kang
-- name: Taeha Kim
-- name: Bom Kim
-- name: Inwook Hwang
-- name: Kay Kyoungju Kwak
+# Doctoral students: name + optional links (email, homepage, scholar, github, linkedin, cv).
+# A button shows only for fields present. No photos (privacy). Add links anytime.
+- name: "Haney Kang"
+- name: "Kwanwoo Kim"
+- name: "Youngjin Jin"
+  github: "https://github.com/iJinjin"
+  cv: "https://ijinjin.github.io/home"
+- name: "Minkyoo Song"
+  cv: "https://minkyoo9.github.io/"
+- name: "Hanna Kim"
+- name: "Myungchul Kang"
+- name: "Taeha Kim"
+- name: "Bom Kim"
+  github: "https://github.com/b0mkim"
+  linkedin: "https://www.linkedin.com/in/b0mkim"
+  cv: "https://b0mkim.github.io/"
+- name: "Inwook Hwang"
+  linkedin: "https://www.linkedin.com/in/inwook-hwang-ba605150/"
+- name: "Kay Kyoung-ju Kwak"
+  linkedin: "https://www.linkedin.com/in/kay-kyoung-ju-kwak-73191664/"
+  cv: "https://kj-kwak.github.io/"
+- name: "Youngduk Kim"

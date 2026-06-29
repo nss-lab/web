@@ -1,21 +1,28 @@
 {%- comment -%}
-Renders a roster as compact rows: name + link buttons (no photos).
+Renders a roster as compact rows: name (+ optional position) + link buttons.
 Usage:  {% include people.html list=site.data.phd %}
-Each person supports: name, role, email, homepage, scholar, github, linkedin.
-Buttons only appear for fields that are present.
+Fields: name, position (shown in grey, e.g. alumni current job),
+        email, homepage, scholar, cv, github, linkedin (each a button if present).
+No photos (privacy).
 {%- endcomment -%}
 {% if include.list and include.list != empty %}
 <ul class="people-list">
   {% for person in include.list %}
   <li class="person-row">
-    <span class="person-name">{{ person.name }}{% if person.role %} <span class="person-role">{{ person.role }}</span>{% endif %}</span>
+    <span class="person-id">
+      <span class="person-name">{{ person.name }}</span>
+      {% if person.position %}<span class="person-position">{{ person.position }}</span>{% endif %}
+    </span>
+    {% if person.email or person.homepage or person.scholar or person.cv or person.github or person.linkedin %}
     <span class="person-links">
       {% if person.email %}<a class="pill" href="mailto:{{ person.email }}">Email</a>{% endif %}
       {% if person.homepage %}<a class="pill" href="{{ person.homepage }}" target="_blank" rel="noopener">Homepage</a>{% endif %}
       {% if person.scholar %}<a class="pill" href="{{ person.scholar }}" target="_blank" rel="noopener">Scholar</a>{% endif %}
-      {% if person.github %}<a class="pill" href="https://github.com/{{ person.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
-      {% if person.linkedin %}<a class="pill" href="https://www.linkedin.com/in/{{ person.linkedin }}/" target="_blank" rel="noopener">LinkedIn</a>{% endif %}
+      {% if person.cv %}<a class="pill" href="{{ person.cv }}" target="_blank" rel="noopener">CV</a>{% endif %}
+      {% if person.github %}<a class="pill" href="{{ person.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
+      {% if person.linkedin %}<a class="pill" href="{{ person.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>{% endif %}
     </span>
+    {% endif %}
   </li>
   {% endfor %}
 </ul>

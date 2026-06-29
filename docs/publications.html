@@ -4,16 +4,19 @@ permalink: /publications/
 title: Publication / Talk
 subtitle: Peer-reviewed papers, journals, and talks.
 ---
-<p class="notice">
-  This is a seed of recent work. The full publication list (2006–2026) still
-  needs to be imported from the legacy site.
-</p>
-
 {% for group in site.data.publications %}
-<h2 class="pub-year">{{ group.year }}</h2>
-<ul class="pub-list">
-  {% for item in group.items %}
-  <li>{{ item }}</li>
-  {% endfor %}
-</ul>
+<section class="pub-group">
+  <h2 class="pub-year">{{ group.year }}</h2>
+  <ul class="pub-list">
+    {% for p in group.papers %}
+    <li class="pub-item">
+      <p class="pub-title">{% if p.venue %}<span class="pub-venue">({{ p.venue }})</span> {% endif %}{{ p.title }}</p>
+      {% if p.authors %}<p class="pub-authors">{{ p.authors }}</p>{% endif %}
+      {% if p.info %}<p class="pub-info">{{ p.info }}</p>{% endif %}
+      {% if p.pdf %}<a class="pill pub-pdf" href="{{ '/assets/papers/' | append: p.pdf | relative_url }}" target="_blank" rel="noopener">PDF ↓</a>
+      {% elsif p.ext %}<a class="pill pub-pdf" href="{{ p.ext }}" target="_blank" rel="noopener">Paper ↗</a>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</section>
 {% endfor %}
