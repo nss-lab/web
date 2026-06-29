@@ -1,0 +1,19 @@
+---
+layout: page
+permalink: /publications/
+title: Publication / Talk
+subtitle: Peer-reviewed papers, journals, and talks.
+---
+<p class="notice">
+  This is a seed of recent work. The full publication list (2006–2026) still
+  needs to be imported from the legacy site.
+</p>
+
+{% for group in site.data.publications %}
+<h2 class="pub-year">{{ group.year }}</h2>
+<ul class="pub-list">
+  {% for item in group.items %}
+  <li>{{ item }}</li>
+  {% endfor %}
+</ul>
+{% endfor %}

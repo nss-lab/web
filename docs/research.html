@@ -1,0 +1,14 @@
+---
+layout: page
+permalink: /research/
+title: Research
+subtitle: Four core directions that drive our work.
+---
+<div class="research-detail">
+  {% for area in site.data.research %}
+  <article class="research-block">
+    <h2>{{ area.title }}</h2>
+    <p>{{ area.summary }}</p>
+  </article>
+  {% endfor %}
+</div>

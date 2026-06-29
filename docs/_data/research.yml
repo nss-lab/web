@@ -1,0 +1,23 @@
+# Research areas — shown on the homepage cards and the /research/ page.
+# To edit an area, change its title/summary. To add one, copy a block.
+- title: SDN / NFV Security
+  summary: >-
+    Building network security systems on Software-Defined Networking and Network
+    Function Virtualization — detecting and mitigating sophisticated DDoS attacks
+    through topology obfuscation (EqualNet, BottleNet) and hardware-accelerated
+    regular-expression matching (Reinhardt).
+- title: Cyber Threat Intelligence
+  summary: >-
+    Collecting and analyzing threat data from across the web to understand emerging
+    attack trends — uncovering inconsistencies in security information, measuring
+    phishing services on the dark web, and investigating cryptocurrency abuse.
+- title: Container Security
+  summary: >-
+    Securing containerized microservice deployments at the network level —
+    preventing inter-container attacks while preserving performance, and enforcing
+    least-privilege system access for containers.
+- title: Blockchain Security
+  summary: >-
+    Large-scale analysis of block and transaction data across Bitcoin, Ethereum,
+    and EOS — studying how permissionless blockchain networks actually behave on
+    the live network, beyond the historical ledger.

@@ -1,0 +1,6 @@
+# Master's students. Same fields as phd.yml (name, email, homepage, scholar,
+# github, linkedin). Add one block per student; a button shows only for fields
+# you fill in. No photos (privacy).
+# - name: Jane Doe
+#   email: jane@kaist.ac.kr
+#   github: janedoe

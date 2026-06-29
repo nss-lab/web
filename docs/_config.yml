@@ -1,0 +1,28 @@
+# --- Site identity ---
+title: NSS Lab
+tagline: Network and System Security Laboratory, KAIST
+description: >-
+  Network and System Security (NSS) Laboratory at KAIST, led by Prof. Seungwon Shin.
+  Research on SDN/NFV security, cyber threat intelligence, container security, and
+  blockchain security.
+lang: en
+
+# Shared contact details (edit here once; used across the site).
+lab_email: nsslab@kaist.ac.kr
+address: "291 Daehak-ro, Yuseong-gu, Daejeon, Korea"
+
+# --- URLs ---
+# Project site lives at https://nss-lab.github.io/web
+# When a custom domain (e.g. nss.kaist.ac.kr) is attached, set baseurl to "".
+url: "https://nss-lab.github.io"
+baseurl: "/web"
+
+# --- Build settings ---
+markdown: kramdown
+# Files not part of the published site.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .bundle
+  - README.md

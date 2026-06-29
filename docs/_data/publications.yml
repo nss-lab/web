@@ -1,0 +1,24 @@
+# Publications grouped by year (newest first). To add a paper, add a line under
+# the right year. Format is free text — keep it consistent: "Title (Venue Year)".
+# This is a SEED of recent papers; the full 2006–2026 list still needs importing
+# from the legacy site (see the notice on the page).
+- year: 2026
+  items:
+    - "PC²: Politically Controversial Content Generation via Jailbreaking Attacks on GPT-based Text-to-Image Models (CCS 2026)"
+    - "AccelFaaS: Accelerating FaaS via Pre-warmed Memory and Control Channel Offloading (TCC 2026)"
+    - "TDSnap: Enabling Secure Function-as-a-Service with Trusted Domain Snapshots (DAC 2026)"
+    - "SafeMoE: Safe Fine-Tuning for MoE LLMs by Aligning Harmful Input Routing (ICLR 2026)"
+    - "HybridMesh: A Hardware-software Hybrid Approach for Accelerating Service Mesh Ingress (NSDI 2026)"
+    - "RDNet: An RDMA-aware Container Network Interface for Cloud Environments (INFOCOM 2026)"
+- year: 2025
+  items:
+    - "SECTRACER: A Framework for Uncovering the Root Causes of Network Intrusions via Security Provenance (Computers & Security 2025)"
+    - "BEACON: Automatic Container Policy Generation using Environment-aware Dynamic Analysis (Computers & Security 2025)"
+    - "PassREfinder-FL: Privacy-Preserving Credential Stuffing Risk Prediction via Graph-Based Federated Learning (ESWA 2025)"
+    - "MoEvil: Poisoning Expert to Compromise the Safety of Mixture-of-Experts LLMs (ACSAC 2025 — Distinguished Paper Award)"
+    - "Improbable Bigrams Expose Vulnerabilities of Incomplete Tokens in Byte-Level Tokenizers (EMNLP 2025)"
+    - "Refusal Is Not an Option: Unlearning Safety Alignment of Large Language Models (USENIX Security 2025)"
+    - "HardMesh: Enabling High-performance Service Mesh Ingress Processing with SmartNIC (SIGCOMM Shorts 2025)"
+    - "CR-ATTACKER: Exploiting Crash-reporting Systems using Timing Gap and Unrestricted File-based Workflow (IEEE Access 2025)"
+    - "When LLMs Go Online: The Emerging Threat of Web-Enabled LLMs (USENIX Security 2025)"
+    - "Obliviate: Neutralizing Task-agnostic Backdoors within the Parameter-efficient Fine-tuning Paradigm (NAACL 2025)"

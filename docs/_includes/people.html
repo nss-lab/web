@@ -1,0 +1,24 @@
+{%- comment -%}
+Renders a roster as compact rows: name + link buttons (no photos).
+Usage:  {% include people.html list=site.data.phd %}
+Each person supports: name, role, email, homepage, scholar, github, linkedin.
+Buttons only appear for fields that are present.
+{%- endcomment -%}
+{% if include.list and include.list != empty %}
+<ul class="people-list">
+  {% for person in include.list %}
+  <li class="person-row">
+    <span class="person-name">{{ person.name }}{% if person.role %} <span class="person-role">{{ person.role }}</span>{% endif %}</span>
+    <span class="person-links">
+      {% if person.email %}<a class="pill" href="mailto:{{ person.email }}">Email</a>{% endif %}
+      {% if person.homepage %}<a class="pill" href="{{ person.homepage }}" target="_blank" rel="noopener">Homepage</a>{% endif %}
+      {% if person.scholar %}<a class="pill" href="{{ person.scholar }}" target="_blank" rel="noopener">Scholar</a>{% endif %}
+      {% if person.github %}<a class="pill" href="https://github.com/{{ person.github }}" target="_blank" rel="noopener">GitHub</a>{% endif %}
+      {% if person.linkedin %}<a class="pill" href="https://www.linkedin.com/in/{{ person.linkedin }}/" target="_blank" rel="noopener">LinkedIn</a>{% endif %}
+    </span>
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<p class="muted">Roster coming soon.</p>
+{% endif %}

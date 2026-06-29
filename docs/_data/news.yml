@@ -1,0 +1,38 @@
+# Homepage news feed (most recent first). To add an item, copy a block to the top.
+# Fields: date (free text), title, venue (optional), link (optional URL).
+- date: May 2026
+  title: "PC²: Politically Controversial Content Generation via Jailbreaking Attacks on GPT-based Text-to-Image Models"
+  venue: Accepted to CCS 2026
+- date: February 2026
+  title: "AccelFaaS: Accelerating FaaS via Pre-warmed Memory and Control Channel Offloading"
+  venue: Accepted to TCC 2026
+- date: February 2026
+  title: "TDSnap: Enabling Secure Function-as-a-Service with Trusted Domain Snapshots"
+  venue: Accepted to DAC 2026
+- date: January 2026
+  title: "SafeMoE: Safe Fine-Tuning for MoE LLMs by Aligning Harmful Input Routing"
+  venue: Accepted to ICLR 2026
+- date: December 2025
+  title: "HybridMesh: A Hardware-software Hybrid Approach for Accelerating Service Mesh Ingress"
+  venue: Accepted to NSDI 2026
+- date: December 2025
+  title: "RDNet: An RDMA-aware Container Network Interface for Cloud Environments"
+  venue: Accepted to INFOCOM 2026
+- date: November 2025
+  title: "SECTRACER: A Framework for Uncovering the Root Causes of Network Intrusions via Security Provenance"
+  venue: Accepted to Computers & Security 2025
+- date: September 2025
+  title: "MoEvil: Poisoning Expert to Compromise the Safety of Mixture-of-Experts LLMs"
+  venue: Accepted to ACSAC 2025 — Distinguished Paper Award
+- date: August 2025
+  title: "Improbable Bigrams Expose Vulnerabilities of Incomplete Tokens in Byte-Level Tokenizers"
+  venue: Accepted to EMNLP 2025
+- date: June 2025
+  title: "Refusal Is Not an Option: Unlearning Safety Alignment of Large Language Models"
+  venue: Accepted to USENIX Security 2025
+- date: May 2025
+  title: "HardMesh: Enabling High-performance Service Mesh Ingress Processing with SmartNIC"
+  venue: Accepted to SIGCOMM (Shorts) 2025
+- date: January 2025
+  title: "When LLMs Go Online: The Emerging Threat of Web-Enabled LLMs"
+  venue: Accepted to USENIX Security 2025

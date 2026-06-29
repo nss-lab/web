@@ -1,0 +1,31 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <span class="brand-mark">NSS</span>
+      <span class="brand-text">Network &amp; System Security Lab<small>KAIST</small></span>
+    </a>
+
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="site-nav" id="site-nav">
+      <ul class="nav-list">
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li class="has-dropdown">
+          <a href="{{ '/people/faculty/' | relative_url }}" class="dropdown-toggle">People <span class="caret" aria-hidden="true">▾</span></a>
+          <ul class="dropdown">
+            <li><a href="{{ '/people/faculty/' | relative_url }}">Faculty</a></li>
+            <li><a href="{{ '/people/phd/' | relative_url }}">Doctoral Students</a></li>
+            <li><a href="{{ '/people/masters/' | relative_url }}">Master's Students</a></li>
+            <li><a href="{{ '/people/alumni/' | relative_url }}">Alumni</a></li>
+          </ul>
+        </li>
+        <li><a href="{{ '/research/' | relative_url }}">Research</a></li>
+        <li><a href="{{ '/publications/' | relative_url }}">Publications</a></li>
+        <li><a href="{{ '/awards/' | relative_url }}">Awards</a></li>
+        <li><a href="{{ '/gallery/' | relative_url }}">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
