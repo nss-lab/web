@@ -53,7 +53,7 @@
   detail: >-
     Systems are now expected to be fast and secure at once. We study how to deliver
     both without compromise, using hardware/software co-design to make security
-    efficient. Our work accelerates service-mesh ingress on SmartNICs
+    efficient. Our work accelerates service mesh ingress on SmartNICs
     (<strong>HybridMesh</strong>, <strong>HardMesh</strong>), gives containers
     RDMA-aware and hardware-isolated networking (<strong>RDNet</strong>,
     <strong>Hyperion</strong>, <strong>HardWhale</strong>), and embeds line-rate
@@ -62,6 +62,6 @@
     and acceleration (<strong>AccelFaaS</strong>, <strong>TDSnap</strong>,
     <strong>Cryonics</strong>).
   topics:
-    - "SmartNIC & service-mesh acceleration — <strong>HybridMesh</strong>, <strong>HardMesh</strong>"
+    - "SmartNIC & service mesh acceleration — <strong>HybridMesh</strong>, <strong>HardMesh</strong>"
     - "Confidential serverless / FaaS — <strong>AccelFaaS</strong>, <strong>TDSnap</strong>, <strong>Cryonics</strong>"
     - "Secure container & in-network systems — <strong>RDNet</strong>, <strong>Hyperion</strong>, <strong>Reinhardt</strong>"
