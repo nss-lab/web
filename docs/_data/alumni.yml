@@ -1,6 +1,8 @@
 # Alumni grouped by degree: name + current position (shown in grey).
 # To add: copy a block, set group/name/position.
 - group: "Ph.D."
+  name: "Haney Kang"
+- group: "Ph.D."
   name: "Seong-Joong Kim"
 - group: "Ph.D."
   name: "Jaehan Kim"

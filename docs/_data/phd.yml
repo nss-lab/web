@@ -1,10 +1,5 @@
 # Doctoral students: name + optional links (email, homepage, scholar, github, linkedin, cv).
 # A button shows only for fields present. No photos (privacy). Add links anytime.
-- name: "Haney Kang"
-- name: "Kwanwoo Kim"
-- name: "Youngjin Jin"
-  github: "https://github.com/iJinjin"
-  cv: "https://ijinjin.github.io/home"
 - name: "Minkyoo Song"
   cv: "https://minkyoo9.github.io/"
 - name: "Hanna Kim"
