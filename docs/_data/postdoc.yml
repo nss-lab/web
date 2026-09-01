@@ -1,0 +1,5 @@
+# Postdoctoral researchers: same fields as phd.yml (email, homepage, scholar, github, linkedin, cv).
+- name: "Kwanwoo Kim"
+- name: "Youngjin Jin"
+  github: "https://github.com/iJinjin"
+  cv: "https://ijinjin.github.io/home"

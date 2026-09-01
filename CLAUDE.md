@@ -76,12 +76,12 @@ docs/
   people/
     index.html                # /people/  combined  (layout: page)
     faculty.md                # /people/faculty/    (layout: page)
-    phd.html masters.html alumni.html               (layout: page)
+    postdoc.html phd.html masters.html alumni.html  (layout: page)
   _layouts/  default.html  page.html
   _includes/ header.html  footer.html  people.html
   _data/
     research.yml news.yml publications.yml
-    phd.yml masters.yml alumni.yml awards.yml gallery.yml
+    postdoc.yml phd.yml masters.yml alumni.yml awards.yml gallery.yml
   assets/
     css/style.css  js/main.js
     img/  nss-logo.png  nss-logo.svg  seungwon-shin.jpg
@@ -100,12 +100,12 @@ CLAUDE.md  README.md  .gitignore  # repo root (not published)
 
 - **Home** — hero, three research cards (from `research.yml`), news feed (from
   `news.yml`), and a "Find Us" Google Map (KAIST place, `cid` embed).
-- **People** (`/people/`) — combined page: faculty mini-card + doctoral + master's
-  + alumni. The nav "People" link points here; the dropdown still links to the
-  individual pages below.
+- **People** (`/people/`) — combined page: faculty mini-card + postdoc + doctoral
+  + master's + alumni (that order, matching the nav dropdown). The nav "People"
+  link points here; the dropdown still links to the individual pages below.
 - **Faculty** — Prof. Shin: intro on the left, photo on the right. Title is
   "Principal Investigator" (not "Director").
-- **Doctoral / Master's** — name + link buttons (see people include).
+- **Postdoc / Doctoral / Master's** — name + link buttons (see people include).
 - **Alumni** — grouped Ph.D. / Master's; name on the left, current affiliation in
   grey on the right.
 - **Research** — three pillars (AI, Security, System) as big alternating figures
@@ -125,7 +125,8 @@ Edit a YAML file, commit, push — GitHub rebuilds. Schemas:
   `assets/papers/`) or `ext:` (external URL). To host a PDF: drop the file in
   `assets/papers/` (convention `venue+year+firstauthor.pdf`, e.g. `ndss2026-you.pdf`)
   and set `pdf:` to its name. Paywalled paper → use `ext:`.
-- **Students** `_data/phd.yml`, `_data/masters.yml` — list of: `name`, then any of
+- **Postdocs / Students** `_data/postdoc.yml`, `_data/phd.yml`, `_data/masters.yml`
+  — list of: `name`, then any of
   `email`, `homepage`, `scholar`, `cv`, `github`, `linkedin` (store **full URLs**,
   except `email`). CV / GitHub / LinkedIn always render; missing ones show greyed &
   unclickable. **No photos** (privacy) — no image fields.
